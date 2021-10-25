@@ -8,7 +8,7 @@ const Task=()=>{
      const [counter,setCounter]=useState(0);
 
      const addTask=(e)=>{
-        if(e.keyCode===13 && e.target.value!==""){
+        if(e.keyCode===13 && e.target.value.trim()!==""){
             setCounter(tarea.length+1); 
             setTarea([...tarea, e.target.value])  
             e.target.value=""
